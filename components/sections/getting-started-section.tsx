@@ -1,6 +1,7 @@
 export default function GettingStartedSection() {
   return (
     <section id="getting-started" className="scroll-mt-20">
+      <p>this is an important section</p>
       <h1 className="text-4xl font-bold mb-6">Data Cleaning</h1>
       <p className="text-sm mb-4">
         The csv data file that we have doesnt always contain complete and reliable values. It is important that we make note of these values remove or change them before we start our data analysing process. 
@@ -27,9 +28,7 @@ export default function GettingStartedSection() {
           <strong>df.isnull().sum()</strong>: Shows the count of missing values per column.
           <div className="flex justify-center">
             <img className="h-[200px] w=[300px]" src="/isnullsum.png"/>
-
           </div>
-          
         </li>
         <li>
           <strong>df.replace('?', np.nan)</strong>:  Here, it replaces '?' with NaN
