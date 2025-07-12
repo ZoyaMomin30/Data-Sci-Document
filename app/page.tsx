@@ -16,7 +16,6 @@ export default function Home() {
       </div>
       <GettingStartedSection />
       <ComponentsSection />
-
     </main>
   )
 }
