@@ -12,6 +12,21 @@ export default function Introduction() {
 
       </ul>
 
+       <h2 className="mb-4 mt-8 text-2xl font-semibold">Setting up the environment</h2>
+      <p className="mb-4">
+        Its better to create a virtual environment and to run things there: 
+        Run the following commands in your terminal and work in jupyter lab. 
+      </p>
+      <pre className="bg-muted p-4 rounded-md mb-4">
+        <code>cd &lt; path &gt;</code>
+        <br></br>
+        <code>python -m venv venv</code>
+        <br></br>
+        <code>source venv/bin/activate</code>
+        <br></br>
+        <code>jupyter lab</code>
+      </pre>
+
       <h2 className="mb-4 mt-8 text-2xl font-semibold">Getting Started</h2>
       <p className="mb-4">
         These are the few basic commands that help you to get the overall view of the .csv data. 
@@ -40,7 +55,7 @@ export default function Introduction() {
           <strong>df.sample(5)</strong>: Displays any random 5 rows
         </li>
         <li>
-          <strong>df.columns()</strong>: Prints all the columns e.g., Index(['col1', 'col2', ...])
+          <strong>df.columns</strong>: Prints all the columns e.g., Index(['col1', 'col2', ...])
         </li>
         <li>
           <strong>df.index</strong>: Shows the index (row labels) e.g.,RangeIndex(start=0, stop=100, step=1)

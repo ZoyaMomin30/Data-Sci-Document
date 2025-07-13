@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Data Science Starter",
+  title: "Data Science Document",
   description: "A gorgeous minimal documentation site using Next.js App Router",
     generator: 'v0.dev'
 }

@@ -1,9 +1,9 @@
 export default function ComponentsSection() {
   return (
     <section id="components" className="scroll-mt-20">
-      <h1 className="text-4xl font-bold mb-6">Sorting Values</h1>
+      <h1 className="text-4xl font-bold mb-6">Grouping Values</h1>
       <p className="text-xl mb-4">
-        After our data has been cleaned and ready to analyse. The next of the few important steps that we go for is Data sorting. Sorting could mean anything with finding the maximum, minimum or average.
+        One of the most important sections here is groupby
       </p>
       <p className="mb-4">This is of the file salaries_by_college_major.csv </p>
 
@@ -34,7 +34,7 @@ export default function ComponentsSection() {
       <img src="/sorting.png" />
 
 
-       <h2 className="text-2xl font-semibold mt-8 mb-4"> Type Conversion</h2>
+       <h2 className="text-2xl font-semibold mt-8 mb-4">Button</h2>
        <p className="mb-4">
         This refers to the analysing of the data based on their values being largest, smallest or average, which refers to the calculations of Maximum, Minimum, Aggregate or etc.
       </p>

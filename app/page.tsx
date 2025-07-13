@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Introduction from "@/components/sections/introduction"
 import GettingStartedSection from "@/components/sections/getting-started-section"
 import ComponentsSection from "@/components/sections/components-section"
+import TypesApi from "@/components/sections/types-api"
 
 export const metadata: Metadata = {
   title: "Data Science Documentation",
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <GettingStartedSection />
       <ComponentsSection />
+      <TypesApi />
     </main>
   )
 }
