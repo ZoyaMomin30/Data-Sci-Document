@@ -27,7 +27,9 @@ export default function GettingStartedSection() {
           <strong>df.isnull().sum()</strong>: Shows the count of missing values per column.
           <div className="flex justify-center">
             <img className="h-[200px] w=[300px]" src="/isnullsum.png"/>
+
           </div>
+          
         </li>
         <li>
           <strong>df.replace('?', np.nan)</strong>:  Here, it replaces '?' with NaN

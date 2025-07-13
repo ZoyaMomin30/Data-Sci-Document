@@ -1,58 +1,69 @@
 export default function Introduction() {
   return (
     <section id="introduction">
-      <h1 className="mb-6 text-4xl font-bold">Welcome to LLM Engineering Documentation</h1>
+      <h1 className="mb-6 text-4xl font-bold">Welcome to Data Science Documentation</h1>
       <p className="mb-4">
-        This is a documentation site that will help you go from beginner to intermediate level. It will cover major aspects and contents revolving around LLM Engineering. Lets dive right in!
+        This is a documentation site that will help you go from beginner to intermediate level. It will cover major aspects and contents revolving around Data Science. Lets get started !
       </p>
       <h2 className="mb-4 mt-8 text-2xl font-semibold">The topics that will be covered in here will be:</h2>
       <ul className="mb-4 list-inside list-disc space-y-1">
         <li>Introduction</li>
+        <li>Data Cleaning</li>
 
       </ul>
 
-      <h2 className="mb-4 mt-8 text-2xl font-semibold">What is an LLM?</h2>
+      <h2 className="mb-4 mt-8 text-2xl font-semibold">Getting Started</h2>
       <p className="mb-4">
-      A Large Language Model is a type of artificial intelligence model trained on huge amounts of text data to understand and generate human language. Think of it as an know it all model. Examples include ChatGPT, GPT-4, Claude, Gemini, etc. They learn patterns, grammar, facts, reasoning, and even some creativity from text data. They use advanced neural networks (usually transformer architectures) which we will cover in further lessons.
+        These are the few basic commands that help you to get the overall view of the .csv data. 
+        These are the initial steps to get to know the data :
       </p>
-
-      {/* <p>Read the data. </p>
-
+      <p>Read the data. </p>
       <pre className="bg-muted p-4 rounded-md mb-4">
         <code>import pandas as pd</code>
         <br></br>
         <code>df = pd.read_csv('path_to_file')</code>
-      </pre> */}
-
-      <h2 className="mb-4 mt-8 text-2xl font-semibold">Prompts</h2>
-      <p className="mb-4">
-        A prompt is nothing but a command that we give to the LLM model. which breaks it down into its own language, understands it and responds accordingly. <br /></p>
-      <h2 className="mb-4 mt-8 text-2xl font-semibold">There are 2 types of prompts:</h2>
-      <ul className="mb-4 list-inside list-disc space-y-1">
-        <li><strong>System Prompt:</strong> Explains the context of the conversation here, tells what task it will be performing overall. Makes the LLM model understand what role it will be playing. e.g. : what tone they should be using, specify if there is any exception they need to know, specify if there are constraints to topics they need to reply to etc.</li>
-        <pre className="bg-muted p-4 rounded-md mb-4 whitespace-pre-wrap">
-        <code>system_prompt="you are a movie booking system. Reply to the questions politely and clearly. if the user is not ready to book let them know about discounts and other movies. Ask if they have cars with them so let them know about Parking availability. "</code>
       </pre>
+      <p>These are the few basic commands that help you to get the overall view of the .csv data. </p>
       <br />
-        <li><strong>User Prompt:</strong> The actual user conversation that the LLM needs to reply to. </li>
-        <pre className="bg-muted p-4 rounded-md mb-4 whitespace-pre-wrap">
-        <code>user_prompt="Which movies are available for tuesday 12pm"</code>
-      </pre>
+      <ul className="mb-4 list-inside list-disc space-y-1">
+        <li>
+          <strong>df.head()</strong>: Displays Top 5 rows
+        </li>
+        <li>
+          <strong>df.tail()</strong>: Displays Last 5 rows
+        </li>
+        <li>
+          <strong>df.shape</strong>: Prints number of Rows and Columns e.g : (100, 14)
+          {/* <img src="" alt="" /> */}
+        </li>
+        <li>
+          <strong>df.sample(5)</strong>: Displays any random 5 rows
+        </li>
+        <li>
+          <strong>df.columns()</strong>: Prints all the columns e.g., Index(['col1', 'col2', ...])
+        </li>
+        <li>
+          <strong>df.index</strong>: Shows the index (row labels) e.g.,RangeIndex(start=0, stop=100, step=1)
+        </li>
+         <li>
+          <strong>df.info</strong>:	Summary of DataFrame: number of non-null entries, data types, memory usage
+        </li>
+        <li>
+          <strong>df.describe()</strong>:	Statistical summary for numerical columns (mean, std, min, max, etc.)
+        </li>
+        <li>
+          <strong>df.dtypes</strong>: Shows data types of each column
+        </li>
       </ul>
       <p className="mb-4">
-        When AI receives a message it describes it using a python list of dictionary. 
+        If you have any questions or need further assistance, don&apos;t hesitate to reach out to our support team.
       </p>
-      <pre className="bg-muted p-4 rounded-md mb-4 whitespace-pre-wrap">
-        <code>[<br />
-          &#123;"role"&#125;:"system", &#123;"content"&#125;:"system message goes here"<br />
-          ]</code>
-      </pre>
 
-      <div>
-        <h2>3 Dimensions of LLM Engineering</h2>
-      </div>
-
-
+      <h2 className="mb-4 mt-8 text-2xl font-semibold">Contributing</h2>
+      <p className="mb-4">
+        We welcome contributions to our documentation. If you find any errors or have suggestions for improvement,
+        please open an issue or submit a pull request on our GitHub repository.
+      </p>
 
       
     </section>
